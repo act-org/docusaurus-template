@@ -1,6 +1,6 @@
 # ACT Docusaurus Documentation
 
-This is a template for docusaurus 2.x.  This creates a docusaurus site that is themed properly and a set of empty
+This is a template for docusaurus 2.x.  This creates a docusaurus site that is themed properly and a set of empty templates to fill in.
 
 ### Installation
 
@@ -23,7 +23,7 @@ PIPELINE_FOLDER_NAME="Pipeline_Folder_Name"
 ### Local Development
 
 ```
-cd your_docs_folder
+cd documentation
 $ npm run start
 ```
 
