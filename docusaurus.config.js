@@ -39,6 +39,7 @@ async function createConfig () {
         /** @type {import('@docusaurus/preset-classic').Options} */
         ({
           docs: {
+            routeBasePath: '/', // Serve the docs at the site's root
             sidebarPath: require.resolve('./sidebars.js'),
             remarkPlugins: [
               math,
@@ -74,6 +75,24 @@ async function createConfig () {
               docId: 'about',
               position: 'left',
               label: 'About',
+            },
+            {
+              type: 'doc',
+              docId: 'architecture/architecture',
+              position: 'left',
+              label: 'Architecture',
+            },
+            {
+              type: 'doc',
+              docId: 'features/features',
+              position: 'left',
+              label: 'Features',
+            },
+            {
+              type: 'doc',
+              docId: 'developers/developers',
+              position: 'left',
+              label: 'Developers',
             },
             {
               href: 'https://agile.act.org/bitbucket',
