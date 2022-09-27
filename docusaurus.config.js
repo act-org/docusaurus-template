@@ -20,11 +20,6 @@ async function createConfig () {
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
 
-    // GitHub pages deployment config.
-    // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'ACT', // Usually your GitHub org/user name.
-    projectName: process.env.BITBUCKET_REPO_NAME || 'repo-name', // Usually your repo name.
-
     // Even if you don't use internalization, you can use this field to set useful
     // metadata like html lang. For example, if your site is Chinese, you may want
     // to replace "en" with "zh-Hans".
@@ -95,7 +90,7 @@ async function createConfig () {
               label: 'Developers',
             },
             {
-              href: 'https://agile.act.org/bitbucket',
+              href: process.env.BITBUCKET_REPO_URL || 'https://agile.act.org/bitbucket',
               label: 'Bitbucket',
               position: 'right',
             },
@@ -105,11 +100,23 @@ async function createConfig () {
           style: 'dark',
           links: [
             {
-              title: 'Docs',
+              title: 'Pages',
               items: [
                 {
                   label: 'About',
-                  to: '/docs/about',
+                  to: '/',
+                },
+                {
+                  label: 'Architecture',
+                  to: '/architecture',
+                },
+                {
+                  label: 'Developers',
+                  to: '/developers',
+                },
+                {
+                  label: 'Features',
+                  to: '/features',
                 },
               ],
             },

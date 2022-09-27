@@ -15,7 +15,6 @@ Edit the .env file with the appropriate values for your project
 
 ```bash
 PROJECT_NAME="Change Me"
-TAG_LINE="Change Me"
 BITBUCKET_REPO_NAME="Repository_Folder_Name"
 PIPELINE_FOLDER_NAME="Pipeline_Folder_Name"
 ```
