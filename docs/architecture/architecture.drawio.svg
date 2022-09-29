@@ -1,4 +1,4 @@
-<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="121px" height="61px" viewBox="-0.5 -0.5 121 61" content="&lt;mxfile&gt;&lt;diagram id=&quot;ztahg5XZQFfZIbwy7aET&quot; name=&quot;Page-1&quot;&gt;jZI9b4QwDIZ/DTuQHnRt6V27dGKoOkbEJZECjnKhQH99Q+PwodNJneI8tmP7jRNWddOr5Ua+owCd5KmYEvaS5HlWZA/+WMgcSFmWAbRWCQraQK1+gGBKdFACrodAh6idMkfYYN9D4w6MW4vjMewL9bGq4S3cgLrh+pZ+KOFkoI+ndONvoFoZK2cpeToegwlcJRc47hA7J6yyiC5Y3VSBXsSLuoS8yx3v2piF3v0nIQ8J31wPNNsnDtaTJ2O0arhT2FOnbo7jWxx6AcsLacKeR6kc1IY3i3f0H+6ZdJ32t8ybVACsg+luk9k6ut8ZwA6cnX0IJbDiFFJoXViUc9zEz6Kicid8QYzTf7fr05sk3iBV4nVT/8+322F2/gU=&lt;/diagram&gt;&lt;/mxfile&gt;">
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="121px" height="61px" viewBox="-0.5 -0.5 121 61" content="&lt;mxfile scale=&quot;1&quot; border=&quot;0&quot; disableSvgWarning=&quot;true&quot;&gt;&lt;diagram id=&quot;ztahg5XZQFfZIbwy7aET&quot; name=&quot;Page-1&quot;&gt;jZLBboQgEIafxrtKtO2xtbvbS08emh6JTIUEHcLiqn36YhlWjWnSCxm+fwaGf0hY1U0Xy418RwE6yVMxJew1yfPyKffrAmYCxUMArVUioGwFtfoGginRQQm47hIdonbK7GGDfQ+N2zFuLY77tC/U+1sNb+EA6obrI/1QwslAH4t05W+gWhlvzlJSOh6TCVwlFzhuEDslrLKILkTdVIFevIu+hLrzH+q9MQu9+08BDeLG9UBv+8TBevJsjFYNdwp76tTN8fkWh17AckKasJdRKge14c2ijn7enknXab/LfHjsiJq8gXUwbRB1eAHswNnZp5DKyiKU0Hdh0c5xNT+LjsqN8SUxTvNu70evlviAXInb1f1fbfOF2ekH&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs/>
     <g>
         <rect x="0" y="0" width="120" height="60" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
@@ -19,12 +19,4 @@
             </switch>
         </g>
     </g>
-    <switch>
-        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
-        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
-            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
-                Viewer does not support full SVG 1.1
-            </text>
-        </a>
-    </switch>
 </svg>
