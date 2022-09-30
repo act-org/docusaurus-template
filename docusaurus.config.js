@@ -63,6 +63,7 @@ async function createConfig () {
           logo: {
             alt: 'ACT Logo',
             src: 'img/logo.png',
+            srcDark: 'img/logo-dark.png',
           },
           items: [
             {
