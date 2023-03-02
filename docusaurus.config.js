@@ -4,7 +4,6 @@ require('dotenv').config();
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const mermaid = require('mdx-mermaid');
 const math = require('remark-math');
 
 
@@ -19,7 +18,7 @@ async function createConfig () {
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-
+    themes: ['@docusaurus/theme-mermaid'],
     // Even if you don't use internalization, you can use this field to set useful
     // metadata like html lang. For example, if your site is Chinese, you may want
     // to replace "en" with "zh-Hans".
@@ -27,7 +26,10 @@ async function createConfig () {
       defaultLocale: 'en',
       locales: ['en'],
     },
-    plugins: ['./webpack.plugin'],
+    markdown: {
+      mermaid: true,
+    },
+    plugins: ['./webpack.plugin', '@actinc/docusaurus-plugin-panzoom'],
     presets: [
       [
         'classic',
@@ -36,14 +38,9 @@ async function createConfig () {
           docs: {
             routeBasePath: '/', // Serve the docs at the site's root
             sidebarPath: require.resolve('./sidebars.js'),
+            sidebarCollapsible: true,
             remarkPlugins: [
               math,
-              [
-                mermaid,
-                {
-                  theme: { light: 'neutral', dark: 'forest' },
-                },
-              ],
             ],
             rehypePlugins: [katex],
           },
@@ -58,6 +55,14 @@ async function createConfig () {
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
+        /** @type {import('@actinc/docusaurus-plugin-panzoom').PanZoomPluginOptions} */
+        zoom: {
+          minScale: 1,
+          maxScale: 10,
+        },
+        mermaid: {
+          theme: {light: 'neutral', dark: 'dark'},
+        },
         navbar: {
           title: process.env.PROJECT_NAME || 'Documentation Site',
           logo: {
@@ -118,7 +123,7 @@ async function createConfig () {
                 {
                   label: 'Features',
                   to: '/features',
-                },
+                }
               ],
             },
           ],
@@ -128,6 +133,11 @@ async function createConfig () {
           theme: lightCodeTheme,
           darkTheme: darkCodeTheme,
         },
+        docs: {
+          sidebar: {
+            hideable: true,
+          },
+        }
       }),
       stylesheets: [
         {
