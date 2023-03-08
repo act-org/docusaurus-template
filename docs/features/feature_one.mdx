@@ -20,9 +20,10 @@ Which means it will not be published, so it's safe to keep this in the folder be
 ## Draw.io Diagram
 You can embed draw.io diagrams directly like this.  Naming the files with .drawio.svg allows you to embed an editable diagram and easily edit with the vscode draw.io plugin.
 
-Draw.io includes by default an SVG 1.1 compatibility warning.  Due to the nature of the tools used to build a docusaurus site will always show up if you embed a drawing this way.  
-
+:::info
+Draw.io  by default includes an SVG 1.1 compatibility warning.  Due to the nature of the tools used to build a docusaurus site will always show up if you embed a drawing this way.  
 **To disable** this warning, in the draw.io editor, choose File -> Properties and disable the SVG 1.1 warning checkbox.
+:::
 
 ```jsx
 import SampleDrawing from './feature_one.drawio.svg';
@@ -33,6 +34,12 @@ import SampleDrawing from './feature_one.drawio.svg';
 
 import SampleDrawing from './feature_one.drawio.svg';
 
+:::info
+Adding the className of drawio will enable constraining the diagram size properly and will also enable the pan and zoom feature for users.
+
+To pan, click and drag.  To zoom, use the mouse wheel. To reset, double click.
+:::
+
 <SampleDrawing className="drawio" />
 
 
@@ -40,6 +47,9 @@ import SampleDrawing from './feature_one.drawio.svg';
 
 You can also directly embed mermaid diagrams like this
 
+:::info
+All mermaid diagrams should have the pan and zoom feature for users.
+:::
 
 ```markdown
     ```mermaid

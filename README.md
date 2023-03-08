@@ -34,3 +34,7 @@ To generate a static version for app doc deployment
 ```
 $ npm run build
 ```
+
+### Configuration
+
+This uses the @actinc/docusaurus-base package to provide the basic docusuarus version, plugins and configuration.  You can override any default setting in docusaurus.config.js as well as provide some inputs to the base for top nav bar links and footer links.
